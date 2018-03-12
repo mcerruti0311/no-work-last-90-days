@@ -2,6 +2,7 @@ SELECT Employee_Number__c,
   Last_Hire_Date__c,
   Master_Job_Code_For_Time_Keeping__r.Name,
   Name,
+  State_City_From_UltiPro__c,
   Title
 FROM Contact
 WHERE Id NOT IN
