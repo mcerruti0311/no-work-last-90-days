@@ -10,6 +10,7 @@ WHERE Id NOT IN
     SELECT Employee__c
     FROM Unified_Time_Management__c
     WHERE In_Time_Accepted__c = LAST_N_DAYS:90
+      AND Void_Entire_Shift_Mispunch__c = false
   )
   AND Employment_Status__c = 'Active'
   AND RecordType.Name = 'SIS Employee'
